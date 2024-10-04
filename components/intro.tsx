@@ -65,9 +65,9 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Shahrier Hossain.</span> I'm a{" "}
         <span className="font-bold">Software Engineer</span> with{" "}
         <span className="font-bold">more than 1.5 years</span> of experience. I love
-        building <span className="italic">apps and sites</span>. I am interested in <span className="font-bold italic">Neuro Data Science</span> and <span className="font-bold italic">Machine Learning</span>.
+        building <span className="italic">apps and sites</span>.
         😑 amm... well, actually I want to be a <span className="font-bold italic">Researcher</span>.
-
+         Highly interested in <span className="font-bold italic">Neuro Data Science</span>, <span className="font-bold italic">Brain Computer Interactions</span>. and <span className="font-bold"> Human Behaviour & Psychology/span>.
       </motion.h1>
 
       <motion.div
