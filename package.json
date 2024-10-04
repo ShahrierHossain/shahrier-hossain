@@ -21,6 +21,7 @@
     "framer-motion": "^10.12.17",
     "mailgun-js": "^0.22.0",
     "next": "^15.0.0-canary.178",
+    "next-optimized-images": "^2.6.2",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
