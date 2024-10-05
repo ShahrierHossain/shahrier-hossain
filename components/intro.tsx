@@ -66,7 +66,7 @@ export default function Intro() {
        {" "} I am a <span className="font-bold">Software Engineer</span> with
         <span className="font-bold"> over 1.5 years of experience</span> in developing applications and websites.
         I am passionate about becoming a <span className="font-bold">Researcher</span>, with a deep interest in   {" "}
-        <span className="font-bold">Neuro Data Science</span>, <span className="font-bold">Brain-Computer Interfaces</span>, and
+        <span className="font-bold">Neural Data Science</span>, <span className="font-bold">Brain-Computer Interfaces</span>, and
         {" "}<span className="font-bold">Human Behavior & Psychology</span>.
       </motion.h1>
 
