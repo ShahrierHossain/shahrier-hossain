@@ -17,21 +17,20 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        My journey began as a Teaching Assistant, where I evaluated students across multiple grades, developing an ability to see problems from different perspectives. Even before graduating with a degree in <span className="font-medium">Computer Science and Engineering</span>, I embarked on my career as a Software Engineer. I initially joined a leading food delivery company <span className="font-medium">as a full-stack developer</span> and am currently working as a Software Engineer at a multinational company. <span className="italic">My favorite aspect of programming</span> is the problem-solving process, and I{" "}
-        <span className="relative underline hover:text-red-500">
-          love
-          <span className="absolute left-0 top-0 hidden hover:block text-red-500 ">
-            ❤️
-          </span>
-        </span>{" "}
-        the feeling of arriving at a solution after tackling challenges. My core stack includes <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>, and I am also proficient in TypeScript and Prisma. I am always eager to learn new technologies.
+        My professional journey began as a Teaching Assistant, where I developed the ability to assess challenges from multiple perspectives while mentoring students across various academic levels. Even before completing my degree in
+        <span className="font-medium"> Computer Science and Engineering</span>, I embarked on a career in software development. My initial role was as a <span className="font-medium"> full-stack developer</span> for a leading food delivery company, and I am currently working as a Software Engineer at a multinational organization.
+        <span className="italic"> What I enjoy most about programming</span> is the problem-solving process, and I
+        <span className="relative underline hover:text-red-500">love</span>
+        the sense of accomplishment that comes with finding solutions to complex challenges. My core technical stack includes <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>, and I am also proficient in TypeScript and Prisma. I am continuously motivated to learn and adopt new technologies.
       </p>
 
       <p>
-        <span className="italic">I am constantly amazed</span> by the <span className="font-medium">human brain's capabilities</span> and how individuals can approach the same topic in uniquely different ways. Given the chance, I would love to work in <span className="italic">Neuro Data Science</span> to explore the fascinating source of data in the human mind. My passion for <span className="font-medium">learning new things</span> spans beyond tech; my interests in Art, Psychology, Interaction, and Technology inspire me to grow as both a creative engineer and a researcher.
+        <span className="italic">I am constantly fascinated</span> by the <span className="font-medium">human brain's capabilities</span> and the diverse ways in which people approach the same problem. Given the opportunity, I would love to pursue a career in {" "}
+        <span className="italic">Neuro Data Science</span>, delving into the human mind as a vast source of data. My passion for <span className="font-medium">learning</span> extends beyond technology; I am inspired by Art, Psychology, Interaction, and Technology, all of which influence my growth as both an engineer and a researcher.
       </p>
     </motion.section>
+
   );
 }

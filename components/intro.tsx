@@ -33,16 +33,16 @@ export default function Intro() {
             <Image
               src="/shahrier_hossain_casual_Image.jpg"
               alt="Shahrier Hossain"
-              width="192"
-              height="192"
-              quality="95"
+              width="280"
+              height="280"
+              quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-28 w-28 sm:h-36 sm:w-36  rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-3xl"
+            className="absolute bottom-1 right-1.5 text-3xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -58,16 +58,16 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Shahrier Hossain.</span> I'm a{" "}
-        <span className="font-bold">Software Engineer</span> with{" "}
-        <span className="font-bold">more than 1.5 years</span> of experience. I love
-        building <span className="italic">apps and sites</span>.
-        😑 amm... well, actually I want to be a <span className="font-bold">Researcher</span>.
-         Highly interested in <span className="font-bold ">Neuro Data Science</span>, <span className="font-bold">Brain Computer Interactions</span>. and <span className="font-bold"> Human Behaviour & Psychology </span>.
+        <span className="font-bold">Hello, I'm Shahrier Hossain.</span>
+        I am a <span className="font-bold">Software Engineer</span> with
+        <span className="font-bold"> over 1.5 years of experience</span> in developing applications and websites.
+        I am passionate about becoming a <span className="font-bold">Researcher</span>, with a deep interest in   {" "}
+        <span className="font-bold">Neuro Data Science</span>, <span className="font-bold">Brain-Computer Interfaces</span>, and
+        {" "}<span className="font-bold">Human Behavior & Psychology</span>.
       </motion.h1>
 
       <motion.div
@@ -80,7 +80,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-4 py-2 flex items-center gap-2 rounded-md outline-none  hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -91,8 +91,8 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Shahrier-Hossain-Resume.pdf"
+          className="group bg-white px-4 py-2 flex items-center gap-2 rounded-md outline-none  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10  dark:text-white/60 hover:dark:bg-white/5  hover:bg-gray-200"
+          href="/Shahrier-Hossain-Education.pdf"
           download
         >
           Download CV{" "}
@@ -100,7 +100,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 hover:dark:bg-white/5  hover:bg-gray-200"
           href="https://www.linkedin.com/in/hossain-shahrier/"
           target="_blank"
         >
@@ -108,7 +108,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full  hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 hover:dark:bg-white/5 dark:text-white/60 hover:bg-gray-200"
           href="https://github.com/hossain-shahrier"
           target="_blank"
         >
