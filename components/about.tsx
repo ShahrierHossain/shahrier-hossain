@@ -28,7 +28,7 @@ export default function About() {
 
       <p>
         <span className="italic">I am constantly fascinated</span> by the <span className="font-medium">human brain's capabilities</span> and the diverse ways in which people approach the same problem. Given the opportunity, I would love to pursue a career in {" "}
-        <span className="italic">Neuro Data Science</span>, delving into the human mind as a vast source of data. My passion for <span className="font-medium">learning</span> extends beyond technology; I am inspired by Art, Psychology, Interaction, and Technology, all of which influence my growth as both an engineer and a researcher.
+        <span className="italic">Neural Data Science</span>, delving into the human mind as a vast source of data. My passion for <span className="font-medium">learning</span> extends beyond technology; I am inspired by Art, Psychology, Interaction, and Technology, all of which influence my growth as both an engineer and a researcher.
       </p>
     </motion.section>
 
