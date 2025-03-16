@@ -61,7 +61,7 @@ export const experiencesData = [
     place: 'JB Connect',
     location: 'Dhaka, Bangladesh',
     description:
-      "I'm now a Software Engineer working in a Multinational Company. Associated with two large scaled projects, where I worked on both as a Full Stack Engineer and Frontend Engineer",
+      "I'm now a Software Engineer working in a Multinational Company. Associated with two large-scale projects, where I worked on both as a Full Stack Engineer and Frontend Engineer",
     icon: React.createElement(FaReact),
     date: '2024 - present',
   },
@@ -72,7 +72,7 @@ export const experiencesData = [
     description:
       'I would love to be a Data Scientist or a Researcher in the field of Neuro Data Science.',
     icon: React.createElement(CgData),
-    date: '2024 - present',
+    date: '2025 - present',
   },
 ] as const;
 
