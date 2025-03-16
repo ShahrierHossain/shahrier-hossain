@@ -91,6 +91,8 @@ export const skillsData = [
   'Redux',
   'GraphQL',
   'Apollo',
+  'C++',
+  'Rust',
   'Express',
   'PostgreSQL',
   'Python',

@@ -22,14 +22,14 @@ export default function About() {
         My professional journey began as a Teaching Assistant, where I developed the ability to assess challenges from multiple perspectives while mentoring students across various academic levels. Even before completing my degree in
         <span className="font-medium"> Computer Science and Engineering</span>, I embarked on a career in software development. My initial role was as a <span className="font-medium"> full-stack developer</span> for a leading food delivery company, and I am currently working as a Software Engineer at a multinational organization.
         <span className="italic"> What I enjoy most about programming</span> is the problem-solving process, and I
-        <span className="relative underline hover:text-red-500">love</span>
+        <span className="relative underline hover:text-red-500"> love </span>
         the sense of accomplishment that comes with finding solutions to complex challenges. My core technical stack includes <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>, and I am also proficient in TypeScript and Prisma. I am continuously motivated to learn and adopt new technologies.
       </p>
 
-      <p>
+      {/* <p>
         <span className="italic">I am constantly fascinated</span> by the <span className="font-medium">human brain's capabilities</span> and the diverse ways in which people approach the same problem. Given the opportunity, I would love to pursue a career in {" "}
         <span className="italic">Neural Data Science</span>, delving into the human mind as a vast source of data. My passion for <span className="font-medium">learning</span> extends beyond technology; I am inspired by Art, Psychology, Interaction, and Technology, all of which influence my growth as both an engineer and a researcher.
-      </p>
+      </p> */}
     </motion.section>
 
   );

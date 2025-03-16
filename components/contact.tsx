@@ -36,10 +36,10 @@ export default function Contact() {
         <a className="underline" href="mailto:hossainshahrier.sh@gmail.com">
           hossainshahrier.sh@gmail.com
         </a>{" "}
-        or through this form.
+        {/* or through this form. */}
       </p>
 
-      <form
+      {/* <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { error } = await sendEmail(formData);
@@ -68,7 +68,7 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
-      </form>
+      </form> */}
     </motion.section>
   );
 }
