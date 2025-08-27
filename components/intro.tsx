@@ -66,7 +66,7 @@ export default function Intro() {
         {" "} I am a <span className="font-bold">Software Engineer</span> with
         <span className="font-bold"> over 1.5 years of experience</span> in developing applications and websites.
         I am passionate about becoming a <span className="font-bold">Researcher</span>, with a deep interest in   {" "}
-        <span className="font-bold">Computational neuroscience</span>, <span className="font-bold">High Performance Computing </span>, <span className="font-bold">Software Engineering</span> and
+        <span className="font-bold">Artificial Intelligence</span>, <span className="font-bold">Robotics</span>, <span className="font-bold">Human Robot and Computer Interaction</span> <span className="font-bold">Unmanned Vehicles</span> <span className="font-bold">Software Engineering</span> and
         {" "}<span className="font-bold">Human Behavior & Psychology</span>.
       </motion.h1>
 
@@ -92,7 +92,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-4 py-2 flex items-center gap-2 rounded-md outline-none  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10  dark:text-white/60 hover:dark:bg-white/5  hover:bg-gray-200"
-          href="/Shahrier-Hossain-Resume.pdf"
+          href="/Shahrier_Hossain_CV.pdf"
           download
         >
           Download CV{" "}
