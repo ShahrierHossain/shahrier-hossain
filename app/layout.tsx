@@ -28,17 +28,53 @@ function Providers({ children }: { children: React.ReactNode }) {
 }
 
 export const metadata = {
-  title: "Shahrier | Personal Portfolio",
-  description: "Shahrier Hossain is a Software Engineer, Web Developer, Tech Enthusiast and want to be a researcher.",
+  title: "Shahrier Hossain | AI, Robotics & Human-Centered Computing",
+  description:
+    "Shahrier Hossain is a Software Engineer and aspiring researcher specializing in Artificial Intelligence, Robotics, Human-Robot Interaction, UAV Systems, Human-Computer Interaction, and Behavioral Psychology.",
   keywords: [
-    "Software Engineer",
-    "Web Developer",
+    "Shahrier Hossain",
+    "Artificial Intelligence",
+    "Robotics",
+    "Human-Robot Interaction",
+    "Human-Computer Interaction",
+    "UAV Systems",
+    "Unmanned Aerial Vehicles",
+    "Software Engineering",
+    "Human Behavior",
+    "Behavioral Psychology",
     "Tech Enthusiast",
     "Researcher",
-    "Portfolio",
-    "Shahrier Hossain"
+    "Personal Portfolio",
+    "AI in Robotics",
+    "Human-Centered AI",
   ],
+  authors: [{ name: "Shahrier Hossain" }],
+  openGraph: {
+    title: "Shahrier Hossain | AI, Robotics & Human-Centered Computing",
+    description:
+      "Portfolio of Shahrier Hossain — Software Engineer and aspiring researcher in Artificial Intelligence, Robotics, Human-Robot Interaction, UAV Systems, and Human Behavior.",
+    url: "https://shahrier-hossain.vercel.app", 
+    siteName: "Shahrier Hossain Portfolio",
+    images: [
+      {
+        url: "/shahrier_hossain_casual_Image.jpg", 
+        width: 1200,
+        height: 630,
+        alt: "Shahrier Hossain Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shahrier Hossain | AI, Robotics & Human-Centered Computing",
+    description:
+      "Software Engineer & aspiring researcher in AI, Robotics, HRI, UAV Systems, and Human Behavior.",
+    images: ["/shahrier_hossain_casual_Image.jpg"],
+  },
 };
+
 
 export default function RootLayout({
   children,
