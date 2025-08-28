@@ -1,18 +1,34 @@
 'use server';
 
-import mailgun from 'mailgun-js';
+import nodemailer from 'nodemailer';
 import { validateString, getErrorMessage } from '@/lib/utils';
 
-const apiKey = process.env.MAILGUN_API_KEY;
-const domain = process.env.MAILGUN_DOMAIN;
+const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
+const smtpPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : 465;
+const smtpService = process.env.SMTP_SERVICE; // e.g., 'gmail' (optional)
+const smtpUser = process.env.SMTP_USER;
+const smtpPass = process.env.SMTP_PASSWORD;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const defaultFrom = process.env.SMTP_FROM || `<${smtpUser || 'hossainshahrier.sh@gmail.com'}>`;
 
-if (!apiKey || !domain) {
-  throw new Error(
-    'Mailgun API key and domain must be defined in environment variables'
-  );
+if (!smtpUser || !smtpPass) {
+  throw new Error('SMTP credentials must be defined in environment variables');
 }
 
-const mg = mailgun({ apiKey: apiKey, domain: domain });
+if (!siteUrl) {
+  throw new Error('NEXT_PUBLIC_SITE_URL must be defined in environment variables');
+}
+
+const transporter = nodemailer.createTransport({
+  host: smtpHost,
+  port: smtpPort,
+  service: smtpService, 
+  secure: smtpPort === 465,
+  auth: {
+    user: smtpUser,
+    pass: smtpPass,
+  },
+});
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get('senderEmail') as string;
@@ -29,31 +45,28 @@ export const sendEmail = async (formData: FormData) => {
   // Fetch rendered HTML from the API route
   let emailContent;
   try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_SITE_URL}/api/renderEmail`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message, senderEmail }),
-      }
-    );
+    const response = await fetch(`${siteUrl}/api/renderEmail`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, senderEmail }),
+    });
     const result = await response.json();
     emailContent = result.emailContent;
   } catch (error) {
     return { error: 'Failed to render email content' };
   }
 
-  const emailData = {
-    from: 'Contact Form <onboarding@your-domain.com>',
-    to: 'hossainshahrier.sh@gmail.com',
-    subject: 'Message from contact form',
+  const mailOptions = {
+    from: defaultFrom,
+    to: "shahrierhossain2025@gmail.com",
+    subject: 'New message from Shahrier Hossain Contact Form',
     html: emailContent,
-    'h:Reply-To': senderEmail,
+    replyTo: senderEmail,
   };
 
   let data;
   try {
-    data = await mg.messages().send(emailData);
+    data = await transporter.sendMail(mailOptions);
   } catch (error) {
     return { error: getErrorMessage(error) };
   }
